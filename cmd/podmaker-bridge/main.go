@@ -40,7 +40,7 @@ func main() {
 	slog.SetDefault(logger)
 
 	addr := envOr("PODMAKER_BRIDGE_ADDR", "127.0.0.1:7766")
-	origins := envOr("PODMAKER_BRIDGE_ORIGINS", "https://podmaker.test,http://podmaker.test,https://app.podmaker.sh,https://localhost:3000")
+	origins := envOr("PODMAKER_BRIDGE_ORIGINS", "https://panel.podmaker.test,https://podmaker.test,http://podmaker.test,https://panel.podmaker.sh,https://app.podmaker.sh,https://localhost:3000")
 	token := os.Getenv("PODMAKER_BRIDGE_TOKEN")
 
 	cfg := api.Config{
